@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ramya ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{
+  font-family:Poppins,sans-serif;
+  background:radial-gradient(circle at 50% 20%,#fff7fb,#f9d8e7 45%,#c875a0 100%);
+  color:#54243d;
+}
+.scene{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;pointer-events:none;transform:scale(1.04);transition:opacity .7s,transform .7s}
+.scene.active{opacity:1;pointer-events:auto;transform:scale(1)}
+.card{width:min(900px,94vw);height:min(680px,90vh);border-radius:34px;
+  background:rgba(255,255,255,.78);backdrop-filter:blur(16px);
+  box-shadow:0 25px 80px rgba(90,25,65,.25);border:1px solid rgba(255,255,255,.8);
+  position:relative;overflow:hidden;padding:clamp(25px,5vw,60px);text-align:center}
+h1,h2,h3{font-family:"Great Vibes",cursive;font-weight:400}
+h1{font-size:clamp(60px,11vw,110px);margin:10px 0;color:#9d3266}
+h2{font-size:clamp(48px,8vw,78px);margin:4px 0;color:#9d3266}
+h3{font-size:clamp(36px,5vw,46px);margin:4px 0;color:#9d3266}
+.subtitle{font-size:clamp(14px,2vw,20px);letter-spacing:2px}
+.date{font-weight:600;letter-spacing:3px;color:#8d496b}
+button{
+  border:0;border-radius:999px;padding:14px 28px;font:600 15px Poppins,sans-serif;
+  color:white;background:linear-gradient(135deg,#c34e82,#8d2d63);
+  box-shadow:0 10px 25px rgba(141,45,99,.3);cursor:pointer;transition:.25s
+}
+button:hover{transform:translateY(-2px) scale(1.02)}
+.small{font-size:12px;opacity:.7;margin-top:12px}
+.glow{animation:glow 2s ease-in-out infinite}
+@keyframes glow{50%{filter:drop-shadow(0 0 20px rgba(255,104,170,.55))}}
+.float{position:absolute;animation:float 5s ease-in-out infinite}
+.balloon{width:58px;height:72px;border-radius:50% 50% 48% 48%;background:#e889b0;opacity:.8}
+.balloon:after{content:"";position:absolute;width:1px;height:80px;background:#a95b7c;top:68px;left:50%}
+.b1{left:7%;top:12%;animation-delay:.2s}.b2{right:8%;top:16%;background:#d9a4ca;animation-delay:1s}
+.b3{left:13%;bottom:10%;background:#f3b2c9;animation-delay:1.7s}.b4{right:14%;bottom:8%;background:#b987b9;animation-delay:.8s}
+@keyframes float{50%{transform:translateY(-22px) rotate(3deg)}}
+.sparkles{position:absolute;inset:0;pointer-events:none}
+.sparkle{position:absolute;color:white;font-size:20px;animation:twinkle 2s infinite}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1.25)}}
+.gallery{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:25px auto;max-width:700px}
+.photo{
+ width:145px;height:185px;border-radius:18px;border:3px solid rgba(255,255,255,.9);
+ background:linear-gradient(145deg,#f7d5e3,#e7b5cf);
+ display:flex;align-items:center;justify-content:center;padding:12px;color:#814461;
+ box-shadow:0 10px 30px rgba(90,25,65,.15);overflow:hidden
+}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo1 img{width:100%;height:100%;object-fit:cover;max-width:700px}
+.envelope{width:250px;height:165px;background:#f4bdd2;border-radius:10px;margin:35px auto;position:relative;
+ box-shadow:0 15px 35px rgba(90,25,65,.2);cursor:pointer}
+.envelope:before{content:"";position:absolute;inset:0;background:#e89bb9;clip-path:polygon(0 0,100% 0,50% 62%);border-radius:10px 10px 0 0}
+.envelope .seal{position:absolute;left:50%;top:57%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:#a82f67;color:#fff;display:grid;place-items:center;font-size:23px;z-index:2}
+.letter{max-width:1000px;margin:5px auto;height:300px;overflow:auto;text-align:left;line-height:1.5;padding:0px 10px}
+.letter p{margin:10px 0}
+.cake{position:relative;width:230px;height:190px;margin:15px auto}
+.layer{position:absolute;left:20px;width:190px;height:60px;border-radius:18px;background:#f6a9c3;box-shadow:inset 0 -10px 0 rgba(150,55,95,.12)}
+.layer.bottom{bottom:15px}.layer.middle{bottom:65px;width:170px;left:30px;background:#f8bfd3}.layer.top{bottom:115px;width:150px;left:40px;background:#ffe0ea}
+.icing{position:absolute;left:48px;bottom:142px;width:134px;height:28px;background:#fff3f7;border-radius:0 0 20px 20px}
+.candle{position:absolute;bottom:143px;width:10px;height:50px;background:#fff;left:50%;transform:translateX(-50%);border-radius:4px}
+.flame{position:absolute;bottom:190px;left:50%;transform:translateX(-50%);width:20px;height:28px;border-radius:50% 50% 50% 0;background:#ffb42d;rotate:-45deg;animation:flame .7s infinite alternate}
+@keyframes flame{to{transform:translateX(-50%) scale(1.15) rotate(5deg)}}
+.hidden{display:none!important}
+.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.confetti i{position:absolute;top:-20px;width:9px;height:16px;animation:fall 3.5s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+.heart{position:fixed;bottom:-30px;font-size:24px;animation:heartUp 4s ease-out forwards;z-index:19;pointer-events:none}
+@keyframes heartUp{to{transform:translateY(-110vh) translateX(var(--drift)) rotate(25deg);opacity:0}}
+.type{min-height:75px}
+.progress{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);font-size:11px;opacity:.45}
+@media(max-width:600px){
+ .card{height:88vh;padding:25px 18px;border-radius:25px}
+ .photo{width:105px;height:135px}
+ .gallery{gap:8px}
+ .letter{height:320px;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<div class="sparkles" id="sparkles"></div>
+<div class="confetti" id="confetti"></div>
+
+<section class="scene active" id="s1">
+ <div class="card">
+  <div class="float balloon b1"></div><div class="float balloon b2"></div><div class="float balloon b3"></div><div class="float balloon b4"></div>
+  <div class="subtitle">✨ A LITTLE SURPRISE FOR YOU ✨</div>
+  <h1 class="glow">Ramya</h1>
+  <p class="subtitle">Someone has a special birthday message waiting...</p>
+  <br><button onclick="go(2); startMusic()">🎁 Tap to Open</button>
+  <div class="small">Use headphones for the best experience 🎵</div>
+  <div class="progress">1 / 8</div>
+ </div>
+</section>
+
+<section class="scene" id="s2">
+ <div class="card">
+  <div class="subtitle">🎉 TODAY IS YOUR DAY 🎉</div>
+  <h2>Happy Birthday!</h2>
+  <h1>Ramya ❤️</h1>
+  <div class="date">30 • 09 • 2026</div>
+  <p class="type" id="t2"></p>
+  <button onclick="go(3)">Continue ✨</button>
+  <div class="progress">2 / 8</div>
+ </div>
+</section>
+
+<section class="scene" id="s3">
+ <div class="card">
+  <div class="subtitle">📸 BEAUTIFUL MEMORIES</div>
+  <h2>Moments to Remember</h2>
+  <div class="gallery">
+   <div class="photo"><img src="Img1.jpeg"></div>
+   <div class="photo"><img src="Img2.jpeg"></div>
+   <div class="photo"><img src="Img3.jpeg"></div>
+   <div class="photo"><img src="Img4.jpeg"></div>
+  </div>
+  <p>“Every picture holds a moment,<br>and every moment becomes a beautiful memory.”</p>
+  <button onclick="go(4)">A Little Message 💌</button>
+  <div class="progress">3 / 8</div>
+ </div>
+</section>
+
+<section class="scene" id="s4">
+ <div class="card">
+  <div class="subtitle">💌 A MESSAGE JUST FOR YOU</div>
+  <h2>Open the Letter</h2>
+  <div class="envelope" onclick="openLetter()"><div class="seal">❤</div></div>
+  <p>Tap the envelope to reveal your birthday wishes.</p>
+  <div class="progress">4 / 8</div>
+ </div>
+</section>
+
+<section class="scene" id="s5">
+ <div class="card">
+  <div class="subtitle">💖 FROM THE HEART</div>
+  <h2>Dear Ramya...</h2>
+  <div class="letter">
+   <p>On this beautiful day, I just want to wish you a very <b>Happy Birthday!</b> 🎂✨
+   	</br>30 September is not just another date on the calendar — it is the day a wonderful person came into this world.
+	</br>May this new year of your life bring you countless reasons to smile, beautiful memories to cherish, and the courage to follow everything your heart wishes for.
+	</br>May every dream you're carrying in your heart slowly turn into reality. May happiness find you in the smallest moments, and may the people around you always remind you how special you are.
+   	</br>Keep smiling, keep shining, and keep being the amazing person you are. ❤️
+   	</br>Here's to <b>30 wonderful years</b> behind you and many more beautiful chapters waiting ahead.
+   	</br><b>Wishing you a very Happy 30th Birthday, Ramya! 🎂🎉💐</b>
+   	May your day be as beautiful and special as you are. ❤️</p>
+  </div>
+  <button onclick="go(6)">Make a Wish 🎂</button>
+  <div class="progress">5 / 8</div>
+ </div>
+</section>
+
+<section class="scene" id="s6">
+ <div class="card">
+  <div class="subtitle">🎂 YOUR BIRTHDAY CAKE</div>
+  <h2>Make a Wish, Ramya...</h2>
+  <div class="cake" onclick="blowCandles()">
+   <div class="layer bottom"></div><div class="layer middle"></div><div class="layer top"></div><div class="icing"></div>
+   <div class="candle"></div><div class="flame" id="flame"></div>
+  </div>
+  <p id="wishText">🕯️ Tap the cake to blow out the candle!</p>
+  <button id="finalBtn" class="hidden" onclick="go(7)">See Your Surprise ✨</button>
+  <div class="progress">6 / 8</div>
+ </div>
+</section>
+
+<section class="scene" id="s7">
+ <div class="card">
+  <div class="subtitle">✨ ONE LAST THING ✨</div>
+  <h2>30 Years.</h2>
+  <h2>Countless Memories.</h2>
+  <p class="subtitle">And so many beautiful moments still waiting to happen... ❤️</p>
+  <h2>Happy Birthday, Ramya! 🎂</h2>
+  <p>May your life always be filled with happiness, laughter, love and beautiful surprises.</p>
+  <button onclick="go(8);">🎉 Final Wishes from special one</button>
+  <div class="progress">7 / 8</div>
+ </div>
+</section>
+
+<section class="scene" id="s8">
+ <div class="card">
+  <h3>Happy Birthday, Mummy! ❤️</h3>
+  <div class="photo1"><img src="Img5.jpeg"></div>
+  <div class="progress">8 / 8</div>
+ </div>
+</section>
+
+<script>
+let current=1, musicOn=false, audioCtx, master;
+function go(n){
+ document.getElementById('s'+current).classList.remove('active');
+ current=n; document.getElementById('s'+current).classList.add('active');
+ if(n===2) typeText();
+ if(n===7) celebrate();
+}
+function typeText(){
+ const el=document.getElementById('t2');
+ const msg="Wishing you a day filled with smiles, laughter, love and all the little things that make you happy. ❤️";
+ el.textContent="";
+ let i=0; const timer=setInterval(()=>{el.textContent+=msg[i++];if(i>=msg.length)clearInterval(timer)},32);
+}
+function openLetter(){ go(5); }
+function makeConfetti(count=90){
+ const box=document.getElementById('confetti'); box.innerHTML="";
+ for(let i=0;i<count;i++){
+  const x=document.createElement('i');
+  x.style.left=Math.random()*100+'vw';
+  x.style.animationDelay=Math.random()*1.5+'s';
+  x.style.animationDuration=(2.5+Math.random()*2)+'s';
+  x.style.transform=`rotate(${Math.random()*360}deg)`;
+  x.style.background=`hsl(${Math.random()*360},70%,65%)`;
+  box.appendChild(x);
+ }
+ setTimeout(()=>box.innerHTML="",5500);
+}
+function hearts(count=18){
+ for(let i=0;i<count;i++){
+  const h=document.createElement('div'); h.className='heart'; h.textContent=['❤️','💖','💕','💗'][Math.floor(Math.random()*4)];
+  h.style.left=Math.random()*100+'vw'; h.style.setProperty('--drift',(Math.random()*180-90)+'px');
+  h.style.animationDelay=(Math.random()*1.2)+'s'; document.body.appendChild(h);
+  setTimeout(()=>h.remove(),5000);
+ }
+}
+function celebrate(){makeConfetti();hearts();}
+function blowCandles(){
+ document.getElementById('flame').classList.add('hidden');
+ document.getElementById('wishText').innerHTML="✨ Wish made! May it come true. ❤️";
+ document.getElementById('finalBtn').classList.remove('hidden');
+ celebrate();
+}
+function makeSparkles(){
+ const box=document.getElementById('sparkles');
+ for(let i=0;i<28;i++){
+  const s=document.createElement('span'); s.className='sparkle'; s.textContent='✦';
+  s.style.left=Math.random()*100+'%'; s.style.top=Math.random()*100+'%';
+  s.style.animationDelay=Math.random()*2+'s'; box.appendChild(s);
+ }
+}
+function startMusic(){
+ if(musicOn)return; musicOn=true;
+ try{
+  audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  master=audioCtx.createGain(); master.gain.value=.035; master.connect(audioCtx.destination);
+  const notes=[261.63,329.63,392,523.25,392,329.63,293.66,349.23,440,523.25,440,349.23];
+  let k=0;
+  setInterval(()=>{
+   if(!audioCtx)return;
+   const o=audioCtx.createOscillator(),g=audioCtx.createGain();
+   o.type='sine';o.frequency.value=notes[k++%notes.length];
+   g.gain.setValueAtTime(0,audioCtx.currentTime);
+   g.gain.linearRampToValueAtTime(.45,audioCtx.currentTime+.03);
+   g.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+.75);
+   o.connect(g);g.connect(master);o.start();o.stop(audioCtx.currentTime+.8);
+  },850);
+ }catch(e){}
+}
+makeSparkles();
+</script>
+</body>
+</html>
